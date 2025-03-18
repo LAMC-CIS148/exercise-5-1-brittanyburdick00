@@ -2,6 +2,12 @@
 :root {
 	--global-color-1: #800000;
 }
+/* Reset Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* HTML element rule */
 html {
 	background-color: white;
@@ -17,6 +23,15 @@ body {
 	width: 600px;
 	border: 3px solid #931420 ;
 	background-color: #fffded;
+}
+/* Linear gradient for header */
+header {
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
 }
 a:focus, a:hover {
 	font-style: italic;
@@ -34,6 +49,8 @@ header h3 {
 }
 header img {
 	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .shadow {
 	text-shadow: 2px 2px 2px var(--global-color-1);
@@ -41,10 +58,14 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
+	padding-right: 30px;
+    padding-left: 30px;
 }
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
 }
 main h2 {
 	color: var(--global-color-1);
@@ -71,7 +92,13 @@ main ul {
 main li {
 	padding-bottom: .35em;
 }
-
+footer {
+	background-color: #931420;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	border-top: 3px solid #931420;
+}
 /* the styles for the footer */
 footer p {
 	text-align: center;
