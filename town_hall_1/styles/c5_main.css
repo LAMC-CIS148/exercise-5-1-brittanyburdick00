@@ -90,9 +90,8 @@ main li {
 footer {
 	background-color: #931420;
 	color: white;
-	text-align: center;
-	padding: 1em;
 	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
 }
 /* the styles for the footer */
 footer p {
